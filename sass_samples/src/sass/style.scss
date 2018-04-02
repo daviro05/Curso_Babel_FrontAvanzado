@@ -1,0 +1,9 @@
+header{
+    h1{
+        color: royalblue;
+    }
+}
+
+main{
+    @import "_extra.scss";
+}
