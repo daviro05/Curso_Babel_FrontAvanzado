@@ -1,0 +1,59 @@
+
+h1{
+    text-align: center;
+    background-color: orange;
+    border: 3px solid tomato;
+    font-size: 2rem;
+    border-radius: 5rem;
+    min-height: 3rem;
+    padding: 1rem;
+    transition: all 1s linear 1s;
+    
+    /*    
+    transition: font-size 2s linear 1s,
+                color 1s linear;
+  transition-property: font-size;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s; */
+}
+
+h1:hover{
+    text-align: center;
+    background-color: chocolate;
+    color:white;
+    border: 3px solid tomato;
+    font-size: 4rem;
+    border-radius: 20rem;
+    min-height: 3rem;
+    padding: 1rem;
+}
+
+main div{
+    padding: 2rem;
+    margin: 2rem;
+    border:1px solid;
+    width: 50%;
+    transition: all 1s linear;
+}
+
+main div:nth-of-type(2){
+    padding: 2rem;
+    margin: 10rem;
+}
+
+main div:nth-of-type(1):hover+ div{
+    background-color: brown;
+    /*transform: scale(2,2);*/
+    /*transform: rotate(90deg) scale(1,2) skew(8deg);*/
+    transform: translate(10rem)
+}
+
+img{
+    width: 100px;
+    transition: all 4s linear;
+}
+
+img:hover{
+    transform: rotate(1800deg);
+}
