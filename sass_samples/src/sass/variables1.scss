@@ -1,0 +1,16 @@
+/* Variables en scss */
+
+$fondo_base: coral;
+$texto_resaltado: blue;
+$div_name : p;
+
+
+/* Operaciones */
+
+$fondo_suave: lighten($fondo_base, 10%); // Ilumina el color un 10%
+
+$texto_normal: $texto_resaltado + #11b;
+
+##{$div_name}{
+    color:$texto_normal;
+}

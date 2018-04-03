@@ -1,5 +1,21 @@
 header h1 {
-  color: royalblue; }
+  color: orange; }
 
 main .extra {
   color: maroon; }
+
+nav {
+  color: red;
+  font-size: 2rem; }
+
+aside {
+  color: red;
+  font-size: 3rem;
+  font-family: cursive; }
+
+article, div {
+  color: maroon;
+  font-size: 1.2rem; }
+
+div {
+  margin: 2rem; }

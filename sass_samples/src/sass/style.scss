@@ -1,9 +1,35 @@
-header{
-    h1{
-        color: royalblue;
+// Variables en scss
+$color_fondo: orange;
+header {
+    h1 {
+        color: $color_fondo;
     }
 }
 
-main{
+main {
     @import "_extra.scss";
+}
+
+@mixin base($variable: 2rem){
+    color:red;
+    font-size: $variable;
+}
+
+nav{
+    @include base();
+}
+
+aside{
+    @include base(3rem);
+    font-family: cursive;
+}
+
+article{
+    color:maroon;
+    font-size: 1.2rem;
+}
+
+div{
+    @extend article;
+    margin: 2rem;
 }
