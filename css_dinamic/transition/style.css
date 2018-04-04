@@ -49,11 +49,20 @@ main div:nth-of-type(1):hover+ div{
     transform: translate(10rem)
 }
 
-img{
-    width: 100px;
+.espiral{
+    width: 200px;
     transition: all 4s linear;
+   /*  animation-name: imagen;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;*/
+} 
+
+.espiral:hover{
+   transform: rotate(1800deg);
 }
 
-img:hover{
-    transform: rotate(1800deg);
+@keyframes imagen {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
+
